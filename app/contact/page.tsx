@@ -1,10 +1,11 @@
-import Header from "@/components/Header";
+
 import styles from "@/components/Acceuil/acceuil.module.css";
 import { Gabarito400, Gabarito700 } from "@/fonts/fonts";
 import { Resend } from "resend";
 import React from 'react';
 import { EmailTemplate } from '@/components/Contact/email';
 import { NextResponse } from 'next/server';
+import styles_contact from "@/components/Contact/contact.module.css";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -35,13 +36,15 @@ export default function EmailPage() {
 
   return (
     <>
-      <Header />
-      <form action={send}>
-        <input type="email" name="email" placeholder="email" required />
-        <input type="text" name="objet" placeholder="objet" required />
-        <input type="text" name="contenu" placeholder="contenu" required />
-        <button type="submit">Send email</button>
+      <div className={`${styles_contact.back} ${Gabarito700.className}`}>
+     <form action={send} className={`${styles_contact.formContainer} ${Gabarito400.className}`}>
+        <h2 className={styles_contact.formTitle}>Contactez-moi</h2>
+        <input type="email" name="email" placeholder="Votre email" required className={styles_contact.inputField}/>
+        <input type="text" name="objet" placeholder="Objet" required className={styles_contact.inputField}/>
+        <input type="text" name="contenu" placeholder="Votre message" required className={styles_contact.inputField}/>
+        <button type="submit" className={styles_contact.submitButton}>Envoyer</button>
       </form>
+      </div>
     </>
   );
 }

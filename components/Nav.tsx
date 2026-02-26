@@ -16,14 +16,6 @@ export default function Nav() {
   return (
     <div className={`flex-center`}>
     <nav>
-      {/* <Link
-        href="/mon-compte?v=2"
-        className={clsx("", {
-          active: pathname === "/mon-compte",
-        })}
-      >
-        Mon compte
-      </Link> */}
       <Link
         href="/acceuil"
         className={clsx("", {

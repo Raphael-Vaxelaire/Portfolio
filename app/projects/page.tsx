@@ -1,43 +1,34 @@
-"use client";
-import Header from "@/components/Header";
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
-import clsx from "clsx";
-import { useEffect } from "react";
-export default function Projets() {
+import { projects } from "@/data/projects";
+import styles from "@/components/Project/projects.module.css";
+import { Gabarito400, Gabarito700 } from "@/fonts/fonts";
 
-   const pathname = usePathname();
-  const searchParams = useSearchParams();
- 
-  useEffect(() => {
-    console.log(searchParams.get("v"));
-  }, [searchParams]);
- 
+export default function ProjectsPage() {
   return (
-     <>
-      <Header />
+    <div className={`${styles.haut} ${Gabarito700.className}`}>
 
-      <Link
-        href="/projects/infos/1"
-        className={clsx("", {
-          active: pathname === "/projects/infos",
-        })}
-      >
-        projet 1
-      </Link>
-            <Link
-        href="/projects/infos/2"
-        className={clsx("", {
-          active: pathname === "/projects/infos",
-        })}
-      >
-        projet 2
-      </Link>
-    </>
-  )
+      <div className={`${styles.container} ${Gabarito400.className}`}>
+        <h1 className={styles.title}>Mes projets</h1>
 
+        <div className={styles.grid}>
+          {projects.map((project) => (
+            <div key={project.slug} className={styles.card}>
+              <div className={styles.cardContent}>
+                <h3 className={styles.projectTitle}>{project.title}</h3>
 
+                <p className={styles.techno}>{project.techno}</p>
 
-
-
+                <Link
+                  href={`/projects/infos/${project.slug}`}
+                  className={styles.ens}
+                >
+                  En savoir plus
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }
