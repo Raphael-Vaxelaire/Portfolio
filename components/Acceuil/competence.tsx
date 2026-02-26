@@ -13,21 +13,21 @@ export default function Competence() {
         <h3 className={styles.competence_titre}>Compétences</h3>
         <div className={styles.language}>
         <Image
-          src="/image/question.png"
+          src="/image/CSS.png"
           width={200}
           height={200}
           alt="Image test"
           className={styles.moi}
           />          
           <Image
-          src="/image/question.png"
+          src="/image/HTML.png"
           width={200}
           height={200}
           alt="Image test"
           className={styles.moi}
           />          
           <Image
-          src="/image/question.png"
+          src="/image/JS.png"
           width={200}
           height={200}
           alt="Image test"
@@ -36,21 +36,21 @@ export default function Competence() {
         </div>
          <div className={styles.language2}>
         <Image
-          src="/image/question.png"
+          src="/image/PHP.png"
           width={200}
           height={200}
           alt="Image test"
           className={styles.moi}
           />          
           <Image
-          src="/image/question.png"
+          src="/image/wordpress.webp"
           width={200}
           height={200}
           alt="Image test"
           className={styles.moi}
           />          
           <Image
-          src="/image/question.png"
+          src="/image/vite.png"
           width={200}
           height={200}
           alt="Image test"

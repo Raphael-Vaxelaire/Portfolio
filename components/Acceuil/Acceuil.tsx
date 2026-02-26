@@ -20,10 +20,41 @@ export default function Acceuil() {
           />
           </div>
           <div className={styles.texte}>
-            <p>Lorem ipsum dolor sit amet. At expedita voluptate eos reprehenderit itaque eos incidunt impedit aut rerum beatae qui soluta architecto et nihil exercitationem. Aut nostrum harum ad beatae totam At reiciendis libero ea molestiae alias et officiis repellat. Aut tenetur beatae a voluptas nihil et harum nostrum qui nisi reprehenderit hic provident consequatur aut obcaecati placeat eos quibusdam laudantium</p>
-            <p>Lorem ipsum dolor sit amet. At expedita voluptate eos reprehenderit itaque eos incidunt impedit aut rerum beatae qui soluta architecto et nihil exercitationem. Aut nostrum harum ad beatae totam At reiciendis libero ea molestiae alias et officiis repellat. Aut tenetur beatae a voluptas nihil et harum nostrum qui nisi reprehenderit hic provident consequatur aut obcaecati placeat eos quibusdam laudantium. 
-              Aut laboriosam rerum non similique obcaecati et veniam autem et quisquam blanditiis in perspiciatis rerum ut omnis dolore cum quod eius. Qui accusamus odio sit amet dolores et numquam quisquam et quidem voluptatem. Ut laudantium aspernatur et deserunt sint ut maxime consectetur sit iusto corporis. Et ducimus omnis et molestiae labore qui sapiente rerum ut consequatur magni aut quis iure vel ipsam reprehenderit aut officia minus.</p>
-          </div>
+             <p>
+            Je m'appelle Raphael Vaxelaire et je suis passionné par le
+            développement web et la création d'expériences numériques
+            engageantes. Depuis mes débuts, j'ai exploré différents frameworks
+            et technologies, allant de Next.js à PHP, en passant par Vue et
+            Tailwind, afin de construire des projets à la fois fonctionnels et
+            esthétiques. Mon objectif est toujours de combiner performance,
+            design et ergonomie pour offrir des solutions complètes et
+            professionnelles. J'aime relever des défis techniques, apprendre de
+            nouvelles pratiques et expérimenter avec des outils modernes pour
+            améliorer mes compétences et mes projets.
+          
+            Je suis particulièrement intéressé par le développement frontend,
+            le design d'interfaces intuitives et l'optimisation SEO, tout en
+            gardant une approche pragmatique de la gestion des données et de
+            l'architecture des projets. Mon parcours m'a permis de travailler
+            sur des projets variés : sites vitrines, applications interactives
+            et projets intégrant des API externes comme celles de Riot ou
+            Resend. Ces expériences m'ont appris l'importance de la rigueur, de
+            la planification et de la maintenance du code sur le long terme.
+          </p>
+
+          <p>
+            Au-delà du développement, j'accorde une grande importance à
+            l'apprentissage continu et au partage de connaissances. Je suis
+            motivé par la résolution de problèmes complexes et par la création
+            de solutions innovantes qui apportent une réelle valeur aux
+            utilisateurs. Curieux et persévérant, je cherche constamment à
+            améliorer mes compétences techniques tout en développant mon sens
+            du design et de l'expérience utilisateur. Mon ambition est de
+            participer à des projets stimulants qui me permettent de croiser
+            créativité et technologie, et de construire des expériences web
+            mémorables et performantes pour tous.
+          </p>
+         </div>
         </div>
 
         <div className={styles.download_zone}>
